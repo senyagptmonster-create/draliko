@@ -1,0 +1,7 @@
+{
+  "forms": [
+    {"name": "Sourdough Boule", "hydration": 78},
+    {"name": "Ciabatta", "hydration": 85},
+    {"name": "Baguette", "hydration": 70}
+  ]
+}
