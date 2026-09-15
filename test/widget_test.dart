@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:draliko/product/product_app.dart';
+import 'package:draliko/presentation/draliko_app.dart';
 
 void main() {
-  testWidgets('Smoke test', (WidgetTester tester) async {
-    await tester.pumpWidget(const MaterialApp(home: ProductApp()));
-    expect(find.byType(ProductApp), findsOneWidget);
+  testWidgets('DralikoApp smoke test', (WidgetTester tester) async {
+    await tester.pumpWidget(const DralikoApp());
+    await tester.pump();
+    expect(find.text("Baker's % Scale"), findsWidgets);
   });
 }
